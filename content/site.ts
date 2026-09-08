@@ -40,6 +40,16 @@ export type SiteCopy = {
     maleAlly: string;
     detailsButton: string;
   };
+  infoSessions: {
+  title: string;
+  intro: string;
+  sessions: {
+    date: string;
+    time: string;
+    label: string;
+  }[];
+  join: string;
+};
   timeline: {
     title: string;
     note: string;
@@ -163,6 +173,36 @@ export const copy: Record<Locale, SiteCopy> = {
         "Male Ally հատուկ ճանաչման համար թեկնածու կարող են առաջադրել կանայք, կազմակերպությունները, հաստատությունները կամ մասնագիտական գործընկերները։ Ինքնաառաջադրում չի թույլատրվում։ Հատուկ ճանաչումը պատվավոր է և չի ներառում յոթ հիմնական անվանակարգերի հաղթողների համար նախատեսված դրամական մրցանակը։",
       detailsButton: "Դիտել մասնակցության պայմանները",
     },
+    hy: {
+  ...
+
+  eligibility: {
+    title: "Ո՞վ կարող է մասնակցել",
+    ...
+  },
+
+  infoSessions: {
+    title: "Տեղեկատվական առցանց հանդիպումներ",
+    intro:
+      "Հայտերի ընդունման ընթացքում կանցկացվեն երկու առցանց տեղեկատվական և հարցուպատասխանի հանդիպումներ՝ անվանակարգերի, մասնակցության պայմանների, գնահատման չափորոշիչների և հայտադիմումի լրացման վերաբերյալ պարզաբանումներ տրամադրելու համար։",
+    sessions: [
+      {
+        date: "15 սեպտեմբերի 2026",
+        time: "15:00՝ Երևանի ժամանակով",
+        label: "Տեղեկատվական և հարցուպատասխանի հանդիպում",
+      },
+      {
+        date: "22 սեպտեմբերի 2026",
+        time: "15:00՝ Երևանի ժամանակով",
+        label: "Տեղեկատվական և հարցուպատասխանի հանդիպում",
+      },
+    ],
+    join: "Միանալ Zoom հանդիպմանը",
+  },
+
+  timeline: {
+    ...
+  },
     timeline: {
       title: "Նախնական ժամանակացույց",
       note: "Ժամկետները ենթակա են վերջնական հաստատման և կարող են թարմացվել։",
@@ -286,6 +326,24 @@ export const copy: Record<Locale, SiteCopy> = {
         "For the Male Ally Special Recognition, nominations may be submitted by women, organizations, institutions or professional peers. Self-nomination is not permitted. The recognition is honorary and does not include the catalytic cash award provided to winners of the seven main categories.",
       detailsButton: "View Eligibility Details",
     },
+    infoSessions: {
+  title: "Online Information Sessions",
+  intro:
+    "Two online information and Q&A sessions will be held during the application period to provide guidance on the award categories, eligibility and participation requirements, evaluation criteria, and completion of the application form.",
+  sessions: [
+    {
+      date: "15 September 2026",
+      time: "15:00 Yerevan time",
+      label: "Online information and Q&A session",
+    },
+    {
+      date: "22 September 2026",
+      time: "15:00 Yerevan time",
+      label: "Online information and Q&A session",
+    },
+  ],
+  join: "Join Zoom session",
+},
     timeline: {
       title: "Indicative Timeline",
       note: "Dates are subject to final confirmation and may be updated.",
