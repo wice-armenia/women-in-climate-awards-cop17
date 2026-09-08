@@ -29,6 +29,11 @@ img { max-width: 100%; }
 .copLogo { width: 118px; }
 .ministryLogo { width: 165px; }
 .wiceLogo { width: 98px; }
+.ministryLogo {
+  width: 150px;
+  height: 90px;
+  object-fit: contain;
+}
 .logoDivider { width: 1px; height: 44px; background: #b6cac4; flex: 0 0 auto; }
 .headerActions { display: flex; align-items: center; gap: 18px; flex: 0 0 auto; }
 .languageSwitch { font-weight: 700; font-size: 14px; display: flex; gap: 6px; align-items: center; }
@@ -237,6 +242,10 @@ img { max-width: 100%; }
   .copLogo { width: 86px; }
   .ministryLogo { width: 112px; }
   .wiceLogo { width: 68px; }
+  .ministryLogo {
+  width: 115px;
+  height: 70px;
+}
   .logoDivider { height: 30px; }
   .headerActions .button { font-size: 12px; padding: 11px 13px; }
   .hero h1 { font-size: 46px; }
