@@ -4,8 +4,13 @@ import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import { ArrowIcon, LeafIcon, SolarIcon, WindIcon } from "@/components/Icons";
 import { copy, Locale } from "@/content/site";
-import { NOMINATION_FORM_URL, WICE_EMAIL, WICE_FACEBOOK_URL, WICE_HOME_URL } from "@/content/config";
-
+import {
+  INFO_SESSION_ZOOM_URL,
+  NOMINATION_FORM_URL,
+  WICE_EMAIL,
+  WICE_FACEBOOK_URL,
+  WICE_HOME_URL,
+} from "@/content/config";
 const supportedLocales: Locale[] = ["hy", "en"];
 
 export function generateStaticParams() {
@@ -116,7 +121,38 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
           </div>
         </div>
       </section>
+<section className="section infoSessionsSection" id="info-sessions">
+  <div className="shell">
+    <div className="sectionHeadingRow">
+      <div>
+        <p className="sectionKicker">
+          {locale === "hy" ? "Հայտերի ընդունման ընթացքում" : "During the application period"}
+        </p>
+        <h2>{t.infoSessions.title}</h2>
+        <p>{t.infoSessions.intro}</p>
+      </div>
+    </div>
 
+    <div className="infoSessionsGrid">
+      {t.infoSessions.sessions.map((session) => (
+        <article className="infoSessionCard" key={session.date}>
+          <span className="infoSessionDate">{session.date}</span>
+          <strong className="infoSessionTime">{session.time}</strong>
+          <p>{session.label}</p>
+
+          <a
+            className="button primary"
+            href={INFO_SESSION_ZOOM_URL}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t.infoSessions.join} <ArrowIcon />
+          </a>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
       <section className="section timelineSection" id="timeline">
         <div className="shell">
           <div className="sectionHeadingRow">
