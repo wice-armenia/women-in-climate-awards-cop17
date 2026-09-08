@@ -14,7 +14,13 @@ export default function Header({ locale, t }: { locale: Locale; t: SiteCopy }) {
           <span className="logoDivider" />
           <Image className="logo copLogo" src="/images/cop17.webp" alt="COP17 Yerevan Armenia" width={148} height={82} priority />
           <span className="logoDivider optionalDivider" />
-          <Image className="logo ministryLogo" src="/images/ministry-en.jpg" alt="Republic of Armenia Ministry of Environment" width={205} height={118} />
+<Image
+  src="/images/ministry-en.jpg"
+  alt="Ministry of Environment of the Republic of Armenia"
+  width={150}
+  height={90}
+  className="ministryLogo"
+/>
           <span className="logoDivider optionalDivider" />
           <Image className="logo wiceLogo" src="/images/wice.png" alt="Women in Climate and Energy" width={128} height={70} />
         </div>
