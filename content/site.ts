@@ -173,14 +173,7 @@ export const copy: Record<Locale, SiteCopy> = {
         "Male Ally հատուկ ճանաչման համար թեկնածու կարող են առաջադրել կանայք, կազմակերպությունները, հաստատությունները կամ մասնագիտական գործընկերները։ Ինքնաառաջադրում չի թույլատրվում։ Հատուկ ճանաչումը պատվավոր է և չի ներառում յոթ հիմնական անվանակարգերի հաղթողների համար նախատեսված դրամական մրցանակը։",
       detailsButton: "Դիտել մասնակցության պայմանները",
     },
-    hy: {
-  ...
-
-  eligibility: {
-    title: "Ո՞վ կարող է մասնակցել",
-    ...
-  },
-
+    
   infoSessions: {
     title: "Տեղեկատվական առցանց հանդիպումներ",
     intro:
@@ -200,10 +193,7 @@ export const copy: Record<Locale, SiteCopy> = {
     join: "Միանալ Zoom հանդիպմանը",
   },
 
-  timeline: {
-    ...
-  },
-    timeline: {
+     timeline: {
       title: "Նախնական ժամանակացույց",
       note: "Ժամկետները ենթակա են վերջնական հաստատման և կարող են թարմացվել։",
       items: [
@@ -216,10 +206,12 @@ export const copy: Record<Locale, SiteCopy> = {
       ],
     },
     recognition: {
-      title: "Ճանաչումից դեպի լուծումների առաջմղում",
-      body:
-        "Յոթ հիմնական անվանակարգերից յուրաքանչյուրի հաղթողին կտրամադրվի 300,000 ՀՀ դրամ մրցանակային գումար՝ ներառյալ կիրառելի հարկերը։ Մրցանակը նպատակ ունի նպաստել հաղթող լուծման հետագա զարգացմանը, տեսանելիությանը, կրկնօրինակմանը կամ ընդլայնմանը։ Հաղթողները նաև հնարավորություն կունենան COP17-ի շրջանակում ներկայացնելու իրենց փորձը, լուծումները և դրանց ընդլայնման ներուժը։",
-    },
+  title: "Ճանաչումից դեպի լուծումների առաջմղում",
+  body:
+    "Յոթ հիմնական անվանակարգերից յուրաքանչյուրի հաղթողին կտրամադրվի 300,000 ՀՀ դրամ մրցանակային գումար՝ ներառյալ կիրառելի հարկերը։ Մրցանակը նպատակ ունի նպաստել հաղթող լուծման հետագա զարգացմանը, տեսանելիությանը, կրկնօրինակմանը կամ ընդլայնմանը։ Հաղթողները նաև հնարավորություն կունենան COP17-ի շրջանակում ներկայացնելու իրենց փորձը, լուծումները և դրանց ընդլայնման ներուժը։",
+  quote:
+    "Առաջնորդության ճանաչումն ու խրախուսումը նպաստում են ավելի դիմակայուն և առողջ ապագայի ձևավորմանը։",
+},
     placeholders: {
       juryTitle: "Ժյուրի",
       juryText: "Ժյուրիի կազմը կհրապարակվի հաստատումից հետո։",
@@ -360,7 +352,7 @@ export const copy: Record<Locale, SiteCopy> = {
       title: "From Recognition to Advancing Solutions",
       body:
         "Each winner in the seven main award categories will receive an award of AMD 300,000, inclusive of applicable taxes. The award is intended to support the further development, visibility, replication or scaling of the winning solution. Winners will also have opportunities within COP17 to present their experience, solutions and potential for scaling.",
-      quote: "Investing in women’s leadership is investing in a more resilient and biodiverse future.",
+      quote: "Recognizing and encouraging leadership contributes to building a more resilient and healthy future.",
     },
     placeholders: {
       juryTitle: "Jury",
