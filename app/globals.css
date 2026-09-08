@@ -120,6 +120,35 @@ img { max-width: 100%; }
 .placeholdersGrid article > span { color: var(--teal); font-weight: 900; font-size: 12px; letter-spacing: .08em; }
 .placeholdersGrid h2 { font-size: 30px; margin-top: 20px; }
 .placeholdersGrid p { line-height: 1.55; color: #5b7475; }
+.partnersSection {
+  background: #fff;
+  padding-top: 58px;
+  padding-bottom: 70px;
+}
+
+.partnersGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.partnerCard {
+  min-height: 120px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(10, 70, 56, 0.04);
+}
+
+.partnerCard img {
+  width: 100%;
+  max-width: 210px;
+  height: 85px;
+  object-fit: contain;
+}
 
 .copWave { height: 115px; overflow: hidden; position: relative; background: white; }
 .waveBand { position: absolute; width: 68%; height: 90px; border-radius: 50% 50% 0 0; bottom: -55px; transform-origin: center; opacity: .95; }
@@ -160,6 +189,9 @@ img { max-width: 100%; }
   .eligibilityPhoto { min-height: 420px; }
   .placeholdersGrid { grid-template-columns: 1fr; }
   .footerGrid { flex-direction: column; align-items: flex-start; }
+  .partnersGrid {
+  grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media (max-width: 620px) {
@@ -187,4 +219,7 @@ img { max-width: 100%; }
   .recognition blockquote { font-size: 28px; }
   .footerBrand { flex-direction: column; align-items: flex-start; }
   .footerLinks { flex-direction: column; gap: 10px; }
+  .partnersGrid {
+  grid-template-columns: 1fr;
+}
 }
