@@ -178,8 +178,7 @@ export const copy: Record<Locale, SiteCopy> = {
     recognition: {
       title: "Ճանաչումից դեպի լուծումների առաջմղում",
       body:
-        "Յոթ հիմնական անվանակարգերից յուրաքանչյուրի հաղթողի համար նախատեսվում է 1,000 ԱՄՆ դոլարի մրցանակ՝ հաղթող լուծման հետագա զարգացմանը, տեսանելիությանը, կրկնօրինակմանը կամ ընդլայնմանը նպաստելու նպատակով։ Հաղթողները նաև հնարավորություն կունենան COP17-ի շրջանակում ներկայացնելու իրենց փորձը, լուծումները և ընդլայնման ներուժը։",
-      quote: "Կանանց առաջնորդության մեջ ներդրումը ներդրում է ավելի դիմակայուն և կենսաբազմազան ապագայի մեջ։",
+        "Յոթ հիմնական անվանակարգերից յուրաքանչյուրի հաղթողին կտրամադրվի 300,000 ՀՀ դրամ մրցանակային գումար՝ ներառյալ կիրառելի հարկերը։ Մրցանակը նպատակ ունի նպաստել հաղթող լուծման հետագա զարգացմանը, տեսանելիությանը, կրկնօրինակմանը կամ ընդլայնմանը։ Հաղթողները նաև հնարավորություն կունենան COP17-ի շրջանակում ներկայացնելու իրենց փորձը, լուծումները և դրանց ընդլայնման ներուժը։",
     },
     placeholders: {
       juryTitle: "Ժյուրի",
@@ -302,7 +301,7 @@ export const copy: Record<Locale, SiteCopy> = {
     recognition: {
       title: "From Recognition to Advancing Solutions",
       body:
-        "Each winner in the seven main award categories is expected to receive a USD 1,000 award intended to support the further development, visibility, replication or scaling of the winning solution. Winners will also have opportunities within COP17 to present their experience, solutions and potential for scaling.",
+        "Each winner in the seven main award categories will receive an award of AMD 300,000, inclusive of applicable taxes. The award is intended to support the further development, visibility, replication or scaling of the winning solution. Winners will also have opportunities within COP17 to present their experience, solutions and potential for scaling.",
       quote: "Investing in women’s leadership is investing in a more resilient and biodiverse future.",
     },
     placeholders: {
