@@ -162,6 +162,55 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
         </div>
       </section>
 
+      <section className="section partnersSection">
+  <div className="shell">
+    <div className="sectionHeadingRow">
+      <div>
+        <p className="sectionKicker">COP17 Special Edition</p>
+        <h2>{locale === "hy" ? "Գործընկերներ" : "Partners"}</h2>
+      </div>
+    </div>
+
+    <div className="partnersGrid">
+      <div className="partnerCard">
+        <Image
+          src="/images/oxygen.jpg"
+          alt="Oxygen Foundation"
+          width={220}
+          height={90}
+        />
+      </div>
+
+      <div className="partnerCard">
+        <Image
+          src="/images/undp.jpg"
+          alt="UNDP"
+          width={220}
+          height={90}
+        />
+      </div>
+
+      <div className="partnerCard">
+        <Image
+          src="/images/unwomen.png"
+          alt="UN Women"
+          width={220}
+          height={90}
+        />
+      </div>
+
+      <div className="partnerCard">
+        <Image
+          src="/images/idbank.png"
+          alt="IDBank"
+          width={220}
+          height={90}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+      
       <section className="copWave" aria-hidden="true">
         <span className="waveBand bandOne" />
         <span className="waveBand bandTwo" />
