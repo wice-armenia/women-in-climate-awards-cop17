@@ -167,7 +167,7 @@ export const copy: Record<Locale, SiteCopy> = {
       title: "Նախնական ժամանակացույց",
       note: "Ժամկետները ենթակա են վերջնական հաստատման և կարող են թարմացվել։",
       items: [
-        { date: "5–30 սեպտեմբեր 2026", title: "Հայտերի ընդունում", note: "Նպատակային ժամանակահատված՝ 25 օր" },
+        { date: "8–30 սեպտեմբեր 2026", title: "Հայտերի ընդունում", note: "23 օրացուցային օր" },
         { date: "30 սեպտեմբեր – 5 հոկտեմբեր", title: "Տեխնիկական ստուգում" },
         { date: "5–15 հոկտեմբեր", title: "Ժյուրիի գնահատում" },
         { date: "15–19 հոկտեմբեր", title: "Արդյունքների ամփոփում" },
@@ -290,7 +290,7 @@ export const copy: Record<Locale, SiteCopy> = {
       title: "Indicative Timeline",
       note: "Dates are subject to final confirmation and may be updated.",
       items: [
-        { date: "5–30 September 2026", title: "Application period", note: "Target 25-day application window" },
+        { date: "8–30 September 2026", title: "Application period", note: "23 calendar days" },
         { date: "30 Sep – 5 Oct", title: "Screening" },
         { date: "5–15 October", title: "Jury scoring" },
         { date: "15–19 October", title: "Results" },
