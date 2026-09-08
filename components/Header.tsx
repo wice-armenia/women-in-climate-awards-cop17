@@ -48,7 +48,7 @@ export default function Header({ locale, nav, nominateLabel }: Props) {
 
       <div className="navBorder">
         <nav className="shell mainNav">
-          <a href={WICE_HOME_URL}>{nav.home}</a>
+          <Link href={`/${locale}`}>{nav.home}</Link>
           <a href="#about">{nav.about}</a>
           <a href="#categories">{nav.categories}</a>
           <a href="#apply">{nav.apply}</a>
