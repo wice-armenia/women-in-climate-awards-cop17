@@ -5,8 +5,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { copy, type Locale } from "@/content/site";
 import { partners } from "@/content/partners";
-import { INFO_SESSION_ZOOM_URL, NOMINATION_FORM_URL } from "@/content/config";
-
+import {
+  INFO_SESSION_ZOOM_URL,
+  NOMINATION_FORM_URL,
+  AWARDS_2022_URL,
+  AWARDS_2024_URL,
+} from "@/content/config";
 const supportedLocales: Locale[] = ["hy", "en"];
 
 export function generateStaticParams() {
@@ -51,7 +55,35 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
               <h2>{t.about.title}</h2>
             </div>
             <div className="aboutGrid">
-              <div className="prose">{t.about.body.map((p) => <p key={p}>{p}</p>)}</div>
+             <div className="prose">
+  {t.about.body.map((p) => <p key={p}>{p}</p>)}
+
+  <div className="previousAwardsButtons">
+    <a
+      className="button secondary"
+      href={AWARDS_2022_URL}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {locale === "hy"
+        ? "2022 թվականի մրցանակաբաշխություն"
+        : "2022 Awards"}
+      <span>→</span>
+    </a>
+
+    <a
+      className="button secondary"
+      href={AWARDS_2024_URL}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {locale === "hy"
+        ? "2024 թվականի մրցանակաբաշխություն"
+        : "2024 Awards"}
+      <span>→</span>
+    </a>
+  </div>
+</div>
               <div className="statsGrid">
                 {t.about.stats.map((s) => (
                   <div className="statCard" key={s.value + s.label}>
