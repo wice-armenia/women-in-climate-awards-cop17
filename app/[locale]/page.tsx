@@ -210,7 +210,7 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
     <div className="partnersGrid">
       <div className="partnerCard">
         <Image
-          src="/images/oxygen.jpg"
+          src="/images/Oxygen.jpg"
           alt="Oxygen Foundation"
           width={220}
           height={90}
@@ -219,7 +219,7 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
 
       <div className="partnerCard">
         <Image
-          src="/images/undp.jpg"
+          src="/images/UNDP.jpg"
           alt="UNDP"
           width={220}
           height={90}
