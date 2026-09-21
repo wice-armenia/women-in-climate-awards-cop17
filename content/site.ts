@@ -180,7 +180,7 @@ export const copy: Record<Locale, SiteCopy> = {
     },
     placeholders: {
       juryTitle: "Ժյուրի",
-      juryBody: "Գնահատող ժյուրիի կազմը կհրապարակվի այս բաժնում։ Հայտերը կգնահատվեն միասնական չափորոշիչների և միավորային համակարգի հիման վրա՝ ապահովելով մասնագիտական փորձն ու անկախ գնահատման սկզբունքները։",
+      juryBody: "Մրցանակաբաշխության հայտերը կգնահատվեն մասնագիտական ժյուրիի կողմից՝ միասնական չափորոշիչների և գնահատման համակարգի հիման վրա։ Ժյուրիի անդամների կազմը ներկայացվում է ստորև։",
       nomineesTitle: "Թեկնածուներ",
       nomineesBody: "Թեկնածուների և ընտրված լուծումների վերաբերյալ տեղեկատվությունը կհրապարակվի մրցույթի համապատասխան փուլում։",
       winnersTitle: "Հաղթողներ",
@@ -287,7 +287,7 @@ export const copy: Record<Locale, SiteCopy> = {
     },
     placeholders: {
       juryTitle: "Jury",
-      juryBody: "The Evaluation Jury will be published in this section. Applications will be assessed using common criteria and a scoring system designed to ensure relevant professional expertise and independent evaluation.",
+      juryBody: "Applications will be assessed by a professional Jury using common evaluation criteria and a scoring framework. Jury members are presented below.",
       nomineesTitle: "Nominees",
       nomineesBody: "Information on nominees and selected solutions will be published at the relevant stage of the competition.",
       winnersTitle: "Winners",
