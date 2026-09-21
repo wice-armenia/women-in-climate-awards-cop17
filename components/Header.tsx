@@ -55,7 +55,7 @@ export default function Header({ locale, nav, nominateLabel }: Props) {
           <a href="#timeline">{nav.timeline}</a>
           <a href="#jury">{nav.jury}</a>
           <a href="#nominees">{nav.nominees}</a>
-          <a href="#winners">{nav.winners}</a>
+          <a href="#partners">{nav.partners}</a>
           <a href="#contact">{nav.contact}</a>
         </nav>
       </div>
