@@ -23,7 +23,7 @@ type SiteCopy = {
     timeline: string;
     jury: string;
     nominees: string;
-    winners: string;
+    partners: string;
     contact: string;
   };
   hero: {
