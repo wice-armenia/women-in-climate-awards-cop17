@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { copy, type Locale } from "@/content/site";
 import { partners } from "@/content/partners";
+import { juryMembers } from "@/content/jury";
 import {
   INFO_SESSION_ZOOM_URL,
   NOMINATION_FORM_URL,
@@ -190,13 +191,58 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
           </div>
         </section>
 
-        <section className="section sectionSoft statusSection">
-          <div className="shell statusGrid">
-            <article id="jury"><span>01</span><h2>{t.placeholders.juryTitle}</h2><p>{t.placeholders.juryBody}</p></article>
-            <article id="nominees"><span>02</span><h2>{t.placeholders.nomineesTitle}</h2><p>{t.placeholders.nomineesBody}</p></article>
-            <article id="winners"><span>03</span><h2>{t.placeholders.winnersTitle}</h2><p>{t.placeholders.winnersBody}</p></article>
+<section className="section sectionSoft statusSection">
+  <div className="shell statusGrid">
+
+    <article id="jury" className="juryArticle">
+      <span>01</span>
+      <h2>{t.placeholders.juryTitle}</h2>
+      <p>{t.placeholders.juryBody}</p>
+
+      <div className="juryGrid">
+        {juryMembers.map((member) => (
+          <div className="juryCard" key={member.key}>
+            <div className="juryPhoto">
+              <Image
+                src={member.image}
+                alt={member.name}
+                width={600}
+                height={600}
+              />
+            </div>
+
+            <div className="juryInfo">
+              <h3>{member.name}</h3>
+
+              <p>
+                {locale === "hy"
+                  ? member.titleHy
+                  : member.titleEn}
+              </p>
+
+              <p className="juryOrganization">
+                {member.organization}
+              </p>
+            </div>
           </div>
-        </section>
+        ))}
+      </div>
+    </article>
+
+    <article id="nominees">
+      <span>02</span>
+      <h2>{t.placeholders.nomineesTitle}</h2>
+      <p>{t.placeholders.nomineesBody}</p>
+    </article>
+
+    <article id="winners">
+      <span>03</span>
+      <h2>{t.placeholders.winnersTitle}</h2>
+      <p>{t.placeholders.winnersBody}</p>
+    </article>
+
+  </div>
+</section>
 
         <section className="section partnersSection" id="partners">
           <div className="shell">
