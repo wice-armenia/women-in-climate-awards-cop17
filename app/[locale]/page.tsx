@@ -198,7 +198,7 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
           </div>
         </section>
 
-        <section className="section partnersSection">
+        <section className="section partnersSection" id="partners">
           <div className="shell">
             <div className="sectionHeading splitHeading">
               <div><p className="eyebrow">COP17 Special Edition</p><h2>{t.partners.title}</h2></div>
