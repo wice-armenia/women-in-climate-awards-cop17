@@ -100,7 +100,7 @@ export const copy: Record<Locale, SiteCopy> = {
       timeline: "Ժամանակացույց",
       jury: "Ժյուրի",
       nominees: "Թեկնածուներ",
-      winners: "Հաղթողներ",
+      partners: "Գործընկերներ",
       contact: "Կապ",
     },
     hero: {
@@ -209,7 +209,7 @@ export const copy: Record<Locale, SiteCopy> = {
       timeline: "Timeline",
       jury: "Jury",
       nominees: "Nominees",
-      winners: "Winners",
+      partners: "Partners",
       contact: "Contact",
     },
     hero: {
