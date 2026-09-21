@@ -235,13 +235,7 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
       <p>{t.placeholders.nomineesBody}</p>
     </article>
 
-    <article id="winners">
-      <span>03</span>
-      <h2>{t.placeholders.winnersTitle}</h2>
-      <p>{t.placeholders.winnersBody}</p>
-    </article>
-
-  </div>
+    </div>
 </section>
 
         <section className="section partnersSection" id="partners">
