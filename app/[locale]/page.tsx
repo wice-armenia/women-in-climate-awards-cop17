@@ -270,7 +270,7 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
               <div className="partnerGroup supporting">
                 <h3>{t.partners.supporting}</h3>
                 <div className="supportingGrid">
-                  {partners.filter((p) => p.key === "undp" || p.key === "unwomen").map((p) => (
+                  {partners.filter((p) => p.key === "undp").map((p) => (
                     <a className={`partnerCard ${p.className || ""}`} href={p.url} target="_blank" rel="noreferrer" key={p.key}>
                       <Image src={p.image} alt={locale === "hy" ? p.nameHy : p.nameEn} width={520} height={260} />
                     </a>
