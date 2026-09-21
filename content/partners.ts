@@ -31,11 +31,4 @@ export const partners: Partner[] = [
     url: "https://www.undp.org/armenia",
     className: "partnerUndp",
   },
-  {
-    key: "unwomen",
-    nameHy: "ՄԱԿ Կանայք",
-    nameEn: "UN Women",
-    image: "/images/unwomen.png",
-    url: "https://eca.unwomen.org/en",
-  },
 ];
