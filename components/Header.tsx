@@ -1,13 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/content/site";
-import { NOMINATION_FORM_URL, WICE_HOME_URL } from "@/content/config";
+import { NOMINATION_FORM_URL } from "@/content/config";
 
 type Props = {
   locale: Locale;
   nav: {
-    home: string; about: string; categories: string; apply: string; timeline: string;
-    jury: string; nominees: string; winners: string; contact: string;
+    home: string;
+    about: string;
+    categories: string;
+    apply: string;
+    timeline: string;
+    jury: string;
+    nominees: string;
+    partners: string;
+    contact: string;
   };
   nominateLabel: string;
 };
