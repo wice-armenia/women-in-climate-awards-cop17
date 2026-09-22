@@ -407,3 +407,8 @@ img { display: block; max-width: 100%; }
     max-width: 320px;
   }
 }
+.juryPhoto img.artemPhoto {
+  object-fit: contain;
+  object-position: center;
+  background: #f4f7f5;
+}
