@@ -205,7 +205,7 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
             <div className="juryPhoto">
               <Image
                 src={member.image}
-                alt={member.name}
+                alt={locale === "hy" ? member.nameHy : member.nameEn}
                 width={600}
                 height={600}
               />
