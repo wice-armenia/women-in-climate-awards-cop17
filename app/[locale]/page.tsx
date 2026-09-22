@@ -212,7 +212,9 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
             </div>
 
             <div className="juryInfo">
-              <h3>{member.name}</h3>
+              <h3>
+  {locale === "hy" ? member.nameHy : member.nameEn}
+</h3>
 
               <p>
                 {locale === "hy"
@@ -220,9 +222,11 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
                   : member.titleEn}
               </p>
 
-              <p className="juryOrganization">
-                {member.organization}
-              </p>
+             <p className="juryOrganization">
+  {locale === "hy"
+    ? member.organizationHy
+    : member.organizationEn}
+</p>
             </div>
           </div>
         ))}
