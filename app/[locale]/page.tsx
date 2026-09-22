@@ -203,12 +203,13 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
         {juryMembers.map((member) => (
           <div className="juryCard" key={member.key}>
             <div className="juryPhoto">
-              <Image
-                src={member.image}
-                alt={locale === "hy" ? member.nameHy : member.nameEn}
-                width={600}
-                height={600}
-              />
+           <Image
+  src={member.image}
+  alt={locale === "hy" ? member.nameHy : member.nameEn}
+  width={600}
+  height={600}
+  className={member.imageClass || ""}
+/>
             </div>
 
             <div className="juryInfo">
