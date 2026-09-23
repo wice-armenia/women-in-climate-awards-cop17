@@ -39,7 +39,7 @@ export const juryMembers: JuryMember[] = [
   titleEn: "Country Director, Armenia",
   organizationHy: "Ռաուլ Վալենբերգի մարդու իրավունքների և մարդասիրական իրավունքի ինստիտուտ",
   organizationEn: "Raoul Wallenberg Institute of Human Rights and Humanitarian Law",
-  image: "/images/jury/laura-milne.jpg",
+  image: "/images/jury/laura-milne.JPG",
 },
 {
   key: "olga-azatyan",
