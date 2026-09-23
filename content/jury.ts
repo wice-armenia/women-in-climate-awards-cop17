@@ -6,8 +6,9 @@ export type JuryMember = {
   titleEn: string;
   organizationHy: string;
   organizationEn: string;
-  image: string;
+  image?: string;
   imageClass?: string;
+  placeholder?: boolean;
 };
 export const juryMembers: JuryMember[] = [
   {
@@ -50,5 +51,25 @@ export const juryMembers: JuryMember[] = [
   organizationHy: "ՄԱԿ Կանայք հայաստանյան գրասենյակ",
   organizationEn: "UN Women Armenia Office",
   image: "/images/jury/olga-azatyan.jpeg",
+},
+  {
+  key: "ministry-environment-armenia",
+  nameHy: "Շուտով",
+  nameEn: "To be announced",
+  titleHy: "Ժյուրիի անդամ",
+  titleEn: "Jury Member",
+  organizationHy: "ՀՀ շրջակա միջավայրի նախարարություն",
+  organizationEn: "Ministry of Environment of the Republic of Armenia",
+  placeholder: true,
+},
+{
+  key: "undp-armenia",
+  nameHy: "Շուտով",
+  nameEn: "To be announced",
+  titleHy: "Ժյուրիի անդամ",
+  titleEn: "Jury Member",
+  organizationHy: "ՄԱԿ-ի զարգացման ծրագիր (ՄԱԶԾ)",
+  organizationEn: "United Nations Development Programme (UNDP)",
+  placeholder: true,
 },
 ];
