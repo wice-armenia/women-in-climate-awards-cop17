@@ -202,15 +202,21 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
       <div className="juryGrid">
         {juryMembers.map((member) => (
           <div className="juryCard" key={member.key}>
-            <div className="juryPhoto">
-           <Image
-  src={member.image}
-  alt={locale === "hy" ? member.nameHy : member.nameEn}
-  width={600}
-  height={600}
-  className={member.imageClass || ""}
-/>
-            </div>
+            <div className={`juryPhoto${member.placeholder ? " juryPlaceholder" : ""}`}>
+  {member.image ? (
+    <Image
+      src={member.image}
+      alt={locale === "hy" ? member.nameHy : member.nameEn}
+      width={600}
+      height={600}
+      className={member.imageClass || ""}
+    />
+  ) : (
+    <div className="juryPlaceholderInner">
+      <span>JURY</span>
+    </div>
+  )}
+</div>
 
             <div className="juryInfo">
               <h3>
