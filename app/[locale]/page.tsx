@@ -212,9 +212,7 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
       className={member.imageClass || ""}
     />
   ) : (
-    <div className="juryPlaceholderInner">
-      <span>JURY</span>
-    </div>
+<div className="juryPlaceholderInner" aria-hidden="true"></div>
   )}
 </div>
 
