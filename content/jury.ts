@@ -12,7 +12,7 @@ export type JuryMember = {
 export const juryMembers: JuryMember[] = [
   {
   key: "amelia-arreguin-prado",
-  nameHy: "Amelia Arreguin Prado",
+  nameHy: "Ամելիա Արրեգուին Պրադո",
   nameEn: "Amelia Arreguin Prado",
   titleHy: "Համակարգող",
   titleEn: "Coordinator",
@@ -33,7 +33,7 @@ export const juryMembers: JuryMember[] = [
 },
   {
   key: "laura-milne",
-  nameHy: "Laura Milne",
+  nameHy: "Լաուրա Միլնե",
   nameEn: "Laura Milne",
   titleHy: "Հայաստանի գրասենյակի տնօրեն",
   titleEn: "Country Director, Armenia",
