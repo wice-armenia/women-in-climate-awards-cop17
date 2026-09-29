@@ -52,15 +52,15 @@ export const juryMembers: JuryMember[] = [
   organizationEn: "UN Women Armenia Office",
   image: "/images/jury/olga-azatyan.jpeg",
 },
-  {
-  key: "ministry-environment-armenia",
-  nameHy: "Շուտով",
-  nameEn: "To be announced",
-  titleHy: "Ժյուրիի անդամ",
-  titleEn: "Jury Member",
+{
+  key: "nona-budoyan",
+  nameHy: "Նոնա Բուդոյան",
+  nameEn: "Nona Budoyan",
+  titleHy: "Կլիմայական քաղաքականության վարչության պետ",
+  titleEn: "Head of Climate Policy Department",
   organizationHy: "ՀՀ շրջակա միջավայրի նախարարություն",
   organizationEn: "Ministry of Environment of the Republic of Armenia",
-  placeholder: true,
+  image: "/images/jury/nona-budoyan.JPG",
 },
 {
   key: "undp-armenia",
