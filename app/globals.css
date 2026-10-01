@@ -439,3 +439,48 @@ img { display: block; max-width: 100%; }
     radial-gradient(circle at center, rgba(11, 106, 74, 0.10) 0 32%, transparent 33%),
     #ffffff;
 }
+/* Deadline extension notice */
+
+.deadlineAlert {
+  background: #fff4d6;
+  border-bottom: 1px solid rgba(246, 174, 48, 0.35);
+}
+
+.deadlineAlertInner {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.deadlineAlertInner strong {
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.deadlineAlertInner span {
+  color: #5f5a3e;
+}
+
+.deadlineAlertInner a {
+  flex: 0 0 auto;
+  color: var(--green-dark);
+  font-weight: 900;
+}
+
+.deadlineAlertInner a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 620px) {
+  .deadlineAlertInner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+}
