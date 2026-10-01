@@ -28,6 +28,31 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
   return (
     <>
       <Header locale={locale} nav={t.nav} nominateLabel={t.hero.nominate} />
+      <div className="deadlineAlert">
+  <div className="shell deadlineAlertInner">
+    <div>
+      <strong>
+        {locale === "hy"
+          ? "Հայտերի ընդունման վերջնաժամկետը երկարաձգվել է"
+          : "Application deadline extended"}
+      </strong>
+
+      <span>
+        {locale === "hy"
+          ? " մինչև 2026 թվականի հոկտեմբերի 2-ը"
+          : " until 2 October 2026"}
+      </span>
+    </div>
+
+    <a
+      href={NOMINATION_FORM_URL}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {locale === "hy" ? "Առաջադրել թեկնածու →" : "Nominate a Candidate →"}
+    </a>
+  </div>
+</div>
       <main id="top" className={`locale-${locale}`}>
         <section className="heroSection">
           <div className="shell heroGrid">
