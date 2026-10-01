@@ -157,12 +157,13 @@ export const copy: Record<Locale, SiteCopy> = {
     },
     timeline: {
       title: "Հիմնական ժամանակացույց",
-      intro: "Հայտերի ընդունումը բաց է 2026 թվականի սեպտեմբերի 8-ից մինչև սեպտեմբերի 30-ը։",
+      intro: "Հայտերի ընդունման վերջնաժամկետը երկարաձգվել է մինչև 2026 թվականի հոկտեմբերի 2-ը։",
       items: [
         { date: "8 սեպտեմբերի 2026", title: "Հայտերի ընդունման մեկնարկ" },
         { date: "15 սեպտեմբերի 2026 • 15:00", title: "Տեղեկատվական և հարցուպատասխանի առցանց հանդիպում", note: "Երևանի ժամանակով (UTC+4)", zoom: true },
         { date: "22 սեպտեմբերի 2026 • 15:00", title: "Տեղեկատվական և հարցուպատասխանի առցանց հանդիպում", note: "Երևանի ժամանակով (UTC+4)", zoom: true },
         { date: "30 սեպտեմբերի 2026", title: "Հայտերի ընդունման վերջնաժամկետ" },
+        { date: "2 հոկտեմբերի 2026", title: "Հայտերի ընդունման երկարաձգված վերջնաժամկետ" },
         { date: "23 հոկտեմբերի 2026", title: "COP17 Կանաչ գոտում նախատեսվող մրցանակաբաշխություն", note: "Երևան" },
         { date: "27 հոկտեմբերի 2026", title: "Հաղթողների մասնակցությամբ նախատեսվող թեմատիկ պանելային քննարկում" },
       ],
@@ -264,12 +265,13 @@ export const copy: Record<Locale, SiteCopy> = {
     },
     timeline: {
       title: "Key Dates",
-      intro: "Applications are open from 8 September through 30 September 2026.",
+      intro: "The application deadline has been extended to 2 October 2026.",
       items: [
         { date: "8 September 2026", title: "Applications open" },
         { date: "15 September 2026 • 15:00", title: "Online information and Q&A session", note: "Yerevan time (UTC+4)", zoom: true },
         { date: "22 September 2026 • 15:00", title: "Online information and Q&A session", note: "Yerevan time (UTC+4)", zoom: true },
         { date: "30 September 2026", title: "Application deadline" },
+        { date: "2 October 2026", title: "Extended application deadline" },
         { date: "23 October 2026", title: "Planned Awards Ceremony in the COP17 Green Zone", note: "Yerevan" },
         { date: "27 October 2026", title: "Planned thematic panel discussion with award winners" },
       ],
