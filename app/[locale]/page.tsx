@@ -260,6 +260,13 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
             </div>
           </div>
         ))}
+        {(member.juryRoleHy || member.juryRoleEn) && (
+  <div className="juryRole">
+    {locale === "hy"
+      ? member.juryRoleHy
+      : member.juryRoleEn}
+  </div>
+)}
       </div>
     </article>
 
