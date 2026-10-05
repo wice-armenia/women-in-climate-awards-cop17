@@ -484,14 +484,40 @@ img { display: block; max-width: 100%; }
     padding-bottom: 11px;
   }
 }
+/* Alternate Jury Assessor */
+
+.alternateJuryCard {
+  border: 2px solid rgba(246, 174, 48, 0.65);
+  background: linear-gradient(180deg, #fffdf6 0%, #ffffff 100%);
+  box-shadow: 0 12px 30px rgba(246, 174, 48, 0.10);
+}
+
+.alternateJuryCard::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background: var(--gold);
+}
+
 .juryRole {
   display: inline-block;
-  margin-top: 14px;
+  margin-bottom: 12px;
   padding: 6px 10px;
   border-radius: 999px;
-  background: var(--green-soft);
-  color: var(--green-dark);
-  font-size: 12px;
+  background: #fff0bf;
+  border: 1px solid rgba(246, 174, 48, 0.45);
+  color: #85600d;
+  font-size: 11px;
   line-height: 1.35;
-  font-weight: 800;
+  font-weight: 900;
+}
+
+/* Astghine photo framing */
+
+.juryPhoto img.astghinePhoto {
+  object-fit: contain;
+  object-position: center;
+  background: #f4f7f5;
+  padding: 10px;
+}
 }
