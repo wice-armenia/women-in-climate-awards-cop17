@@ -6,6 +6,8 @@ export type JuryMember = {
   titleEn: string;
   organizationHy: string;
   organizationEn: string;
+  juryRoleHy?: string;
+  juryRoleEn?: string;
   image?: string;
   imageClass?: string;
   placeholder?: boolean;
@@ -101,5 +103,17 @@ export const juryMembers: JuryMember[] = [
   organizationHy: "Գերմանիայի միջազգային համագործակցության ընկերություն (GIZ)",
   organizationEn: "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
   placeholder: true,
+},
+  {
+  key: "astghine-pasoyan",
+  nameHy: "Աստղինե Պասոյան",
+  nameEn: "Astghine Pasoyan",
+  titleHy: "Տնօրեն",
+  titleEn: "Director",
+  organizationHy: "Էներգախնայողության աջակցման հիմնադրամ",
+  organizationEn: "Energy Saving Foundation",
+  juryRoleHy: "Ժյուրիի փոխարինող գնահատող",
+  juryRoleEn: "Alternate Jury Assessor",
+  image: "/images/jury/astghine-pasoyan.jpeg",
 },
 ];
