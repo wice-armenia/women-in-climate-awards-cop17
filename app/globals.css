@@ -484,3 +484,14 @@ img { display: block; max-width: 100%; }
     padding-bottom: 11px;
   }
 }
+.juryRole {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: var(--green-soft);
+  color: var(--green-dark);
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 800;
+}
