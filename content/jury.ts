@@ -104,7 +104,7 @@ export const juryMembers: JuryMember[] = [
   organizationEn: "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
   placeholder: true,
 },
-  {
+ {
   key: "astghine-pasoyan",
   nameHy: "Աստղինե Պասոյան",
   nameEn: "Astghine Pasoyan",
@@ -115,5 +115,6 @@ export const juryMembers: JuryMember[] = [
   juryRoleHy: "Ժյուրիի փոխարինող գնահատող",
   juryRoleEn: "Alternate Jury Assessor",
   image: "/images/jury/astghine-pasoyan.jpeg",
+  imageClass: "astghinePhoto",
 },
 ];
