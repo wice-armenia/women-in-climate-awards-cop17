@@ -226,25 +226,44 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
 
       <div className="juryGrid">
         {juryMembers.map((member) => (
-          <div className="juryCard" key={member.key}>
-            <div className={`juryPhoto${member.placeholder ? " juryPlaceholder" : ""}`}>
-  {member.image ? (
-    <Image
-      src={member.image}
-      alt={locale === "hy" ? member.nameHy : member.nameEn}
-      width={600}
-      height={600}
-      className={member.imageClass || ""}
-    />
-  ) : (
-<div className="juryPlaceholderInner" aria-hidden="true"></div>
-  )}
-</div>
+          <div
+            className={`juryCard${member.juryRoleEn ? " alternateJuryCard" : ""}`}
+            key={member.key}
+          >
+            <div
+              className={`juryPhoto${member.placeholder ? " juryPlaceholder" : ""}`}
+            >
+              {member.image ? (
+                <Image
+                  src={member.image}
+                  alt={locale === "hy" ? member.nameHy : member.nameEn}
+                  width={600}
+                  height={600}
+                  className={member.imageClass || ""}
+                />
+              ) : (
+                <div
+                  className="juryPlaceholderInner"
+                  aria-hidden="true"
+                ></div>
+              )}
+            </div>
 
             <div className="juryInfo">
+
+              {(member.juryRoleHy || member.juryRoleEn) && (
+                <div className="juryRole">
+                  {locale === "hy"
+                    ? member.juryRoleHy
+                    : member.juryRoleEn}
+                </div>
+              )}
+
               <h3>
-  {locale === "hy" ? member.nameHy : member.nameEn}
-</h3>
+                {locale === "hy"
+                  ? member.nameHy
+                  : member.nameEn}
+              </h3>
 
               <p>
                 {locale === "hy"
@@ -252,21 +271,15 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
                   : member.titleEn}
               </p>
 
-             <p className="juryOrganization">
-  {locale === "hy"
-    ? member.organizationHy
-    : member.organizationEn}
-</p>
+              <p className="juryOrganization">
+                {locale === "hy"
+                  ? member.organizationHy
+                  : member.organizationEn}
+              </p>
+
             </div>
           </div>
         ))}
-        {(member.juryRoleHy || member.juryRoleEn) && (
-  <div className="juryRole">
-    {locale === "hy"
-      ? member.juryRoleHy
-      : member.juryRoleEn}
-  </div>
-)}
       </div>
     </article>
 
@@ -276,7 +289,7 @@ export default async function AwardsPage({ params }: { params: Promise<{ locale:
       <p>{t.placeholders.nomineesBody}</p>
     </article>
 
-    </div>
+  </div>
 </section>
 
         <section className="section partnersSection" id="partners">
