@@ -517,7 +517,7 @@ img { display: block; max-width: 100%; }
   object-position: center;
   background: #f4f7f5;
   padding: 0;
-  transform: scale(0.90);
+  transform: scale(1.0);
   transform-origin: center;
 }
 
