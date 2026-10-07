@@ -102,7 +102,7 @@ export const juryMembers: JuryMember[] = [
   titleEn: "Advisor, Sustainable Energy for Climate Resilient Municipal Development in Armenia (SE4Resilience) project",
   organizationHy: "Գերմանական միջազգային համագործակցության ընկերություն (GIZ)",
   organizationEn: "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
-  image: "/images/jury/siranush-galstyan.JPG",
+  image: "/images/jury/siranush-galstyan.jpg",
 },
  {
   key: "astghine-pasoyan",
