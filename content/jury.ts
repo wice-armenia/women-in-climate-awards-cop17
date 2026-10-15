@@ -83,6 +83,7 @@ export const juryMembers: JuryMember[] = [
   organizationHy: "ՄԱԿ-ի Պարենի և գյուղատնտեսության կազմակերպություն (FAO)",
   organizationEn: "Food and Agriculture Organization of the United Nations (FAO)",
   image: "/images/jury/vahan-amirkhanyan.jpg",
+   imageClass: "vahanPhoto",
 },
 {
   key: "bella-vasilyan",
