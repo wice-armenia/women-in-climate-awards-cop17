@@ -124,6 +124,6 @@ export const juryMembers: JuryMember[] = [
   titleEn: "Chief Specialist, Gender Policy Issues Department",
   organizationHy: "ՀՀ աշխատանքի և սոցիալական հարցերի նախարարություն",
   organizationEn: "Ministry of Labour and Social Affairs of the Republic of Armenia",
-  placeholder: true,
-},
+  image: "/images/jury/ani-sahakyan.jpeg",
+   },
 ];
